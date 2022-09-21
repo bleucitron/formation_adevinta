@@ -1,24 +1,25 @@
 // Améliorez ce code
+'use strict';
 
-var argent = 1000;
+let argent = 1000;
 
-var nbGlaces = 8;
-var prixGlace = 2;
+let nbGlaces = 8;
+let prixGlace = 2;
 
-argent = argent - nbGlaces * prixGlace;
+argent -= nbGlaces * prixGlace;
 nbGlaces = 0;
 
-var inflation = 0.04;
+const inflation = 0.04;
 
-prixGlace = prixGlace * (1 + inflation);
+prixGlace *= 1 + inflation;
 
-var argentDePoche = 100;
-var nbMois = 12;
+const argentDePoche = 100;
+const nbMois = 12;
 
-argent = argent + argentDePoche * 12;
+argent += argentDePoche * 12;
 
-var crashBancaire = 5;
+const crashBancaire = 5;
 
-argent = argent / crashBancaire;
+argent /= crashBancaire;
 
 console.log('Argent', argent);
