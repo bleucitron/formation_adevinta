@@ -118,7 +118,7 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
 
 - [`<ul>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) [`<ol>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol) [`<li>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/li) : lister des éléments
 
-- [`<article>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/article) [`<menu>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/menu) [`<section>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/section) [`<footer>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer) [`<header>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) [`<nav>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav) [`<main>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/main) [`<p>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/p) [`<h1>`-`<h6>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements) : structurer son contenu
+- [`<article>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/article) [`<menu>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/menu) [`<section>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/section) [`<footer>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer) [`<header>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) [`aside`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/aside) [`<nav>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav) [`<main>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/main) [`<p>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/p) [`<h1>`-`<h6>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements) : structurer son contenu
 
 - [`<table>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/table) : pour des données tabulaires
 
@@ -167,6 +167,17 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
   - `required`
 - [`<textarea>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea), [`<select>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea) et [`<option>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/option)
 
+### Style dans le HTML
+
+Le but premier du HTML est de structurer le contenu. **Il ne devrait pas être utilisé pour donner du style** à une page. C'est le CSS que l'on doit utiliser pour ça.
+Utiliser du HTML pour styliser revient à mélanger les rôles de 2 langages, et est considéré aujourd'hui comme une mauvaise pratique.
+
+Les balises comme `<br />` (saut de ligne) ou `<hr />` (séparateur horizontal) sont un exemple de ce genre de pratique: utiliser le HTML pour donner du style à une page.
+
+On peut parvenir à exactement le même résultat avec du CSS.
+
+**Il est recommandé d'utiliser le HTML uniquement pour structurer le contenu, et le CSS uniquement pour appliquer du style**.
+
 ### Charger une autre page
 
 - [`<iframe src="http://....">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
@@ -177,8 +188,9 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
 
 - Le HTML sert à structurer le contenu d'une page
 - C'est un langage de balises, à qui on peut donner des attributs
-- le `<head>` permet de fournir des méta-données au navigateur
-- le `<body>` contient les informations à afficher
+- Le `<head>` permet de fournir des méta-données au navigateur
+- Le `<body>` contient les informations à afficher
+- Ne pas mélanger les rôles: HTML sert à la structure, CSS au style
 
 ---
 
