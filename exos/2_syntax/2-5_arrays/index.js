@@ -5,6 +5,8 @@ console.log('Exos 2-5: Tableaux');
  *                           Pop 'n Push
  *========================================================================**/
 console.log("*** Pop 'n Push ***");
+
+const nombres = [5, 6, 1, 2, 3, 4, 7];
 /**
  * 1) Enlevez des éléments de 'nombres' pour ne garder que [1, 2, 3]
  * 2) Ajoutez des éléments dans 'nombres' pour faire [0, 1, 2, 3, 4, 5, 6]
