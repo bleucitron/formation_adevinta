@@ -14,6 +14,11 @@ console.log('*** Bonjour ***');
  * 2) Utiliser cette fonction avec votre prénom en logguant son résultat
  */
 
+function direBonjour(nom) {
+  return 'Bonjour ' + nom;
+}
+
+console.log(direBonjour('Romain'));
 /**========================================================================
  *                           Somme
  *========================================================================**/
@@ -26,6 +31,11 @@ console.log('*** Somme ***');
  *
  * 2) Utiliser cette fonction sur deux nombres de votre choix
  */
+
+function somme(a, b) {
+  return a + b;
+}
+console.log(somme(2, 5));
 
 /**========================================================================
  *                           Pourcentage
@@ -41,10 +51,15 @@ console.log('*** Pourcentage ***');
  * et afficher son résultat dans la console
  */
 
+function calculer(n, p) {
+  return n * (1 + p / 100);
+}
+
 /**
  * 3) Modifier la fonction "calculer" pour pouvoir choisir également le pourcentage appliqué
  */
 
+console.log(calculer(100, 13));
 /**========================================================================
  *                           [Bonus] Limite
  *========================================================================**/
@@ -56,6 +71,18 @@ console.log('*** [Bonus] Limite ***');
  * - divise ce nombre par 2 jusqu'à ce que le nombre soit plus petit que 1 / 1_000_000
  * - renvoie le nombre de fois où on a divisé.
  */
+
+function limit(n, l, t) {
+  let nb = 0;
+  while (n - l > 1 / t) {
+    n = (n - l) / 2;
+    nb++;
+  }
+
+  return nb;
+}
+
+console.log(limit(10_000_000, 5000, 1_000));
 
 /**
  * Dans la question précédente, la limite était 0, et la tolérance 1 / 1_000_000
@@ -84,3 +111,42 @@ const languages = ['fr', 'es', 'de', 'it', 'jp'];
  * 2) Utiliser "prepareHello" pour créer plusieurs fonctions pour dire bonjour dans plusieurs langues
  * 3) Tester les fonctions créées
  */
+
+function prepareHello(lang) {
+  switch (lang) {
+    case 'fr': {
+      return nom => 'Bonjour ' + nom;
+    }
+    case 'es': {
+      return nom => 'Hola ' + nom;
+    }
+    default: {
+      return nom => 'Hello ' + nom;
+    }
+  }
+
+  // if (lang === 'fr') {
+  //   return function (nom) {
+  //     return 'Bonjour ' + nom;
+  //   };
+  // } else if (lang === 'es') {
+  //   return function (nom) {
+  //     return 'Hola ' + nom;
+  //   };
+  // } else {
+  //   return function (nom) {
+  //     return 'Hello ' + nom;
+  //   };
+  // }
+}
+
+const fonctions = [];
+
+for (let i = 0; i < languages.length; i++) {
+  fonctions.push(prepareHello(languages[i]));
+}
+
+console.log(fonctions[0]('Romain'));
+console.log(fonctions[1]('Romain'));
+console.log(fonctions[2]('Romain'));
+console.log(fonctions[3]('Romain'));
