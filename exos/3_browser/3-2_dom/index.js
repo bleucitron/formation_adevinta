@@ -7,7 +7,7 @@ console.log('Exos 3-2: DOM');
 console.log('*** Chirurgie ***');
 
 /**
- * 1) Changez le texte et la couleur du background de l'élément avec l'id 'main'
+ * 1) Changez le texte et la couleur du background de l'élément avec l'id 'coucou'
  * 2) Comptez les éléments de type 'i'
  * 3) Comptez les 'i' gris, bleus, et rouge
  * 4) Supprimez les éléments avec la classe 'inutile', ainsi que les i bleus et rouge

@@ -58,7 +58,6 @@ const myElement = document.getElementById("myId"); // renvoie l'élément qui a 
 
 const found = document.querySelector(selector); // renvoie le premier élément correspondant de la page
 const founds = document.querySelectorAll(selector); // renvoie un iterateur avec tous les éléments de la page correspondant
-
 ```
 
 ### Dans les enfants d'un élément
@@ -98,7 +97,8 @@ getComputedStyle(e)
 ### Position
 
 ```js
-e.append(enfant); // ajoute un enfant à l'élément
+e.append(enfant); // ajoute un enfant en dernière position à l'élément
+e.prepend(enfant); // ajoute un enfant en première position à l'élément
 e.remove(); // retire l'élement de l'arbre
 e.removeChild(enfant); // retire un enfant de l'arbre
 e.replaceWith(n2); // remplace l'élément par un autre
@@ -112,6 +112,7 @@ e.id = 'newId';
 e.textContent = 'Coucou';
 
 e.innerHTML = '<div>Coucou</div>';
+e.innerHTML = '' // vide le contenu HTML de l'élément
 // ...
 ```
 
