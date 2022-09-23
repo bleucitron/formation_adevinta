@@ -26,6 +26,30 @@ const colors = [
   'purple',
 ];
 
+function doExo1() {
+  const exo1 = document.getElementById('exo1');
+
+  function createColor(color, index) {
+    const div = document.createElement('div');
+    div.classList.add('color');
+    div.style.background = color;
+    div.textContent = index + 1 + '. ' + color;
+
+    div.addEventListener('click', () => {
+      document.body.style.background = color;
+    });
+
+    return div;
+  }
+
+  colors.forEach((color, index) => {
+    const div = createColor(color, index);
+    exo1.append(div);
+  });
+}
+
+doExo1();
+
 /**========================================================================
  *                           Taille
  *========================================================================**/
@@ -38,10 +62,51 @@ console.log('*** Taille ***');
  * en fonction de la position en Y de la souris à l'écran (event.clientY)
  */
 
+function doExo2() {
+  const s2 = document.createElement('section');
+  s2.id = 'exo2';
+  document.body.append(s2);
+
+  const carre = document.createElement('div');
+  carre.classList.add('carre');
+  s2.append(carre);
+
+  carre.addEventListener('mousemove', event => {
+    carre.style.width = event.clientX + 'px';
+  });
+}
+
+doExo2();
+
 /**========================================================================
  *                           Clavier
  *========================================================================**/
 console.log('*** Clavier ***');
+
+window.addEventListener('keydown', e => {
+  const color = colors[e.key - 1];
+  document.body.style.background = color;
+});
+
+window.addEventListener('keydown', e => {
+  e.preventDefault();
+
+  if (e.metaKey && e.key === 'r') {
+    const exo1 = document.getElementById('exo1');
+    const exo2 = document.getElementById('exo2');
+    if (exo1) {
+      exo1.innerHTML = '';
+    }
+    exo2?.remove();
+  }
+});
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    doExo1();
+    doExo2();
+  }
+});
 
 /**
  * 1) Faire en sorte de changer la couleur du background du body quand on appuie sur 1, 2, 3...
