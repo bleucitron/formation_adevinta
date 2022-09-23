@@ -46,6 +46,16 @@ monElement.addEventListener("click", maFonction);
 monElement.removeEventListener("click", maFonction);
 ```
 
+## Inputs
+
+```js
+const input = document.getElementById('nom');
+
+input.addEventListener('input', e => {
+  console.log('valeur actuelle', e.target.value);
+})
+```
+
 ## Évènements classiques
 
 ### Souris

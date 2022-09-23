@@ -319,4 +319,4 @@ console.log(pie);
 
 **Le nombre de valeurs objets ou fonctions varie** au cours du temps, selon que votre code en crée, ou que le ramasse-miette en détruit.
 
-#### _La suite: [Égalité(s) des valeurs](./1-5_equality.md)_
+#### _La suite: [Égalité(s) des valeurs](./1-4_equality.md)_
