@@ -103,6 +103,7 @@ if (undefined)
 if (0)
 if (-0)
 if (0n)
+if (-0n)
 if (NaN)
 if ("")
 ```
