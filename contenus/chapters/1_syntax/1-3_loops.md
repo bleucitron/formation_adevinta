@@ -107,10 +107,10 @@ En effet, si la condition d'arrêt est mal définie, ou si on oublie de faire é
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/2_syntax/2-3_loops`
+- Ouvrir le dossier `/exos/1_syntax/1-3_loops`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `index.js`, et vérifier les résultats dans votre navigateur
 
 ---
 
-### _À suivre: [Fonctions](./2-4_functions.md)_
+### _À suivre: [Fonctions](./1-4_functions.md)_

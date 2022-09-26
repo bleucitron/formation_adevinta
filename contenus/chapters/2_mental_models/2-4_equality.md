@@ -110,4 +110,4 @@ Le seul cas acceptable est `x == null`, qui permet de tester si `x` est ni `null
 
 ---
 
-### _À suivre: [Propriétés](./1-5_properties.md)_
+### _À suivre: [Propriétés](./2-5_properties.md)_

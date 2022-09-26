@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-6: Libs');
+console.log('Exos 1-6: Libs');
 
 /**========================================================================
  *                           Aléatoire

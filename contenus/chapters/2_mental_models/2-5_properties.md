@@ -180,8 +180,8 @@ Au final, tout n'est qu'une histoire de câbles.
 
 # _**À vos crayons !!!**_
 
-- Faire les exercices du fichier [`/exos/1-6_properties.md`](../../../exos/1-6_properties.md)
+- Faire les exercices du fichier [`/exos/2-6_properties.md`](../../../exos/2-6_properties.md)
 
 ---
 
-#### _La suite: [Syntaxe](../2_syntax/index.md)_
+#### _La suite: [La navigateur](../3_browser/index.md)_

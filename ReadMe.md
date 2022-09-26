@@ -7,24 +7,25 @@
 - #### [CSS](./contenus/chapters/0_prologue/0-2_css.md)
 - #### [Javascript](./contenus/chapters/0_prologue/0-3_javascript.md)
 
-## 1. Mieux comprendre Javascript
+## 1. Utiliser Javascript
 
-- #### [Modèles mentaux](./contenus/chapters/1_mental_models/1-0_matrix.md)
-- #### [L'univers Javascript](./contenus/chapters/1_mental_models/1-1_universe.md)
-- #### [Les variables](./contenus/chapters/1_mental_models/1-2_variables.md)
-- #### [Étudions les valeurs](./contenus/chapters/1_mental_models/1-3_types.md)
-- #### [Égalité](./contenus/chapters/1_mental_models/1-4_equality.md)
-- #### [Propriétés](./contenus/chapters/1_mental_models/1-5_properties.md)
+- #### [Préliminaires](./contenus/chapters/1_syntax/1-0_bases.md)
+- #### [Assignations](./contenus/chapters/1_syntax/1-1_assignments.md)
+- #### [Conditions](./contenus/chapters/1_syntax/1-2_conditions.md)
+- #### [Boucles](./contenus/chapters/1_syntax/1-3_loops.md)
+- #### [Fonctions](./contenus/chapters/1_syntax/1-4_functions.md)
+- #### [Tableaux](./contenus/chapters/1_syntax/1-5_arrays.md)
+- #### [Libraires standard](./contenus/chapters/1_syntax/1-6_libs.md)
 
-## 2. Utiliser Javascript
+## 2. Mieux comprendre Javascript
 
-- #### [Préliminaires](./contenus/chapters/2_syntax/2-0_bases.md)
-- #### [Assignations](./contenus/chapters/2_syntax/2-1_assignments.md)
-- #### [Conditions](./contenus/chapters/2_syntax/2-2_conditions.md)
-- #### [Boucles](./contenus/chapters/2_syntax/2-3_loops.md)
-- #### [Fonctions](./contenus/chapters/2_syntax/2-4_functions.md)
-- #### [Tableaux](./contenus/chapters/2_syntax/2-5_arrays.md)
-- #### [Libraires standard](./contenus/chapters/2_syntax/2-6_libs.md)
+- #### [Modèles mentaux](./contenus/chapters/2_mental_models/2-0_matrix.md)
+- #### [L'univers Javascript](./contenus/chapters/2_mental_models/2-1_universe.md)
+- #### [Les variables](./contenus/chapters/2_mental_models/2-2_variables.md)
+- #### [Étudions les valeurs](./contenus/chapters/2_mental_models/2-3_types.md)
+- #### [Égalité](./contenus/chapters/2_mental_models/2-4_equality.md)
+- #### [Propriétés](./contenus/chapters/2_mental_models/2-5_properties.md)
+
 
 ## 3. Dans le navigateur
 

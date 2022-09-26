@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-3: Boucles');
+console.log('Exos 1-3: Boucles');
 
 /**========================================================================
  *                           Assurance vie

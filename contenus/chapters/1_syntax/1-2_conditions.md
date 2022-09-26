@@ -151,10 +151,10 @@ const name = isSpanish ? 'Roberto' : 'Robert';
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/2_syntax/2-2_conditions`
+- Ouvrir le dossier `/exos/1_syntax/1-2_conditions`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `index.js`, et vérifier les résultats dans votre navigateur
 
 ---
 
-### _À suivre: [Boucles](./2-3_loops.md)_
+### _À suivre: [Boucles](./1-3_loops.md)_

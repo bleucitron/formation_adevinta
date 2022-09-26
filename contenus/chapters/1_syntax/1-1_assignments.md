@@ -151,10 +151,10 @@ a--; // a -= 1
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/2_syntax/2-1_assignments`
+- Ouvrir le dossier `/exos/1_syntax/1-1_assignments`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `index.js`, et vérifier les résultats dans votre navigateur
 
 ---
 
-### _À suivre: [Conditions](./2-2_conditions.md)_
+### _À suivre: [Conditions](./1-2_conditions.md)_

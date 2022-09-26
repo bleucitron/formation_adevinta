@@ -97,4 +97,4 @@ Il permet d'éviter certaines erreurs ou mauvaises pratiques liées à la nature
 
 ---
 
-### _À suivre: [Assignations de variables](./2-1_assignments.md)_
+### _À suivre: [Assignations de variables](./1-1_assignments.md)_

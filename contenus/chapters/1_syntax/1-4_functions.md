@@ -115,11 +115,11 @@ const saluer = () => {
 
 ## Exos
 
-- Ouvrir le dossier `/exos/2_syntax/2-4_functions`
+- Ouvrir le dossier `/exos/1_syntax/1-4_functions`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `.js`, et vérifier les résultats dans
   votre navigateur
 
 ---
 
-### _À suivre: [Tableaux](./2-5_arrays.md)_
+### _À suivre: [Tableaux](./1-5_arrays.md)_

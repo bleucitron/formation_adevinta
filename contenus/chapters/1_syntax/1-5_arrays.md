@@ -208,11 +208,11 @@ const found = array.find(function (e, i, a) {
 
 ## Exos
 
-- Ouvrir le dossier `/exos/2_syntax/2-5_arrays`
+- Ouvrir le dossier `/exos/1_syntax/1-5_arrays`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `.js`, et vérifier les résultats dans
   votre navigateur
 
 ---
 
-### _À suivre: [Quelques librairies standards](./2-6_libs.md)_
+### _À suivre: [Quelques librairies standards](./1-6_libs.md)_

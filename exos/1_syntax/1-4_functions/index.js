@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-4: Fonctions');
+console.log('Exos 1-4: Fonctions');
 
 /**========================================================================
  *                           Bonjour

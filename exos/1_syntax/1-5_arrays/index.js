@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-5: Tableaux');
+console.log('Exos 1-5: Tableaux');
 
 /**========================================================================
  *                           Pop 'n Push
