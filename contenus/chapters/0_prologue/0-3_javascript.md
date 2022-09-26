@@ -1,6 +1,6 @@
 # Javascript
 
-## Un peu d'histoire
+## Généralités
 
 Javascript est un langage de programmation interprété, faiblement typé, single
 threadé, et asynchrone.
@@ -12,7 +12,7 @@ threadé, et asynchrone.
 - Asynchrone = est capable d'utiliser des instructions non bloquantes _(merci
   l'Event Loop...)_
 
-## Généralités
+## Un peu d'histoire
 
 Javascript a été créé en décembre 1995 en seulement **10 jours :scream:** par
 [Brendan Eich](https://fr.wikipedia.org/wiki/Brendan_Eich), qui travaillait à

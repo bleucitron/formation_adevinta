@@ -180,7 +180,7 @@ Au final, tout n'est qu'une histoire de câbles.
 
 # _**À vos crayons !!!**_
 
-- Faire les exercices du fichier [`/exos/2-6_properties.md`](../../../exos/2-6_properties.md)
+- Faire les exercices du fichier [`/exos/2-5_properties.md`](../../../exos/2-5_properties.md)
 
 ---
 
