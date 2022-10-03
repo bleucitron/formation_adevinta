@@ -159,6 +159,14 @@ moi.sayName();
 
 Un petit aperçu plus complet de ce qui est possible est disponible [ici](./5-X_es6%2B.md).
 
+---
+
+## Exercices
+
+- Ouvrir le dossier `/exos/5_modern_js/5-1_syntax`
+- Ouvrir le fichier `index.html` dans votre navigateur
+- Suivre les indications du fichier `index.js`, et vérifier les résultats dans votre navigateur
+
 
 ---
 
