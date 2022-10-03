@@ -215,4 +215,4 @@ const found = array.find(function (e, i, a) {
 
 ---
 
-### _À suivre: [Quelques librairies standards](./1-6_libs.md)_
+### _À suivre: [Modèles mentaux](../2_mental_models/index.md)_
