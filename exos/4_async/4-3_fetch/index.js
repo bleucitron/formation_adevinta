@@ -2,12 +2,12 @@
 console.log('Exos 4-3: Fetch');
 
 /**========================================================================
- *                           LeMonde
+ *                           Meta HTML
  *========================================================================**/
-console.log('*** LeMonde ***');
+console.log('*** Meta HTML ***');
 
 /**
- * 1) Utilisez fetch pour récupérer la page text.html
+ * 1) Utilisez fetch pour récupérer la page test.html
  * - utiliser .text()
  * 2) Affichez le contenu de la page récupérée dans un <p>
  */
