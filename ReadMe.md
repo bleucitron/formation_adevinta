@@ -15,7 +15,6 @@
 - #### [Boucles](./contenus/chapters/1_syntax/1-3_loops.md)
 - #### [Fonctions](./contenus/chapters/1_syntax/1-4_functions.md)
 - #### [Tableaux](./contenus/chapters/1_syntax/1-5_arrays.md)
-- #### [Libraires standard](./contenus/chapters/1_syntax/1-6_libs.md)
 
 ## 2. Mieux comprendre Javascript
 
