@@ -1,8 +1,8 @@
-'use strict';
+import { yearToMs } from './constants.js';
 
-function computeAge(birth, died) {
+export function computeAge(birth, died) {
   const end = died ? new Date(died) : new Date();
   const start = new Date(birth);
 
-  return (end - start) / msToYear;
+  return Math.floor((end - start) / yearToMs);
 }

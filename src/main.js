@@ -1,3 +1,5 @@
+import createOl from './createOl.js';
+
 fetch('https://raw.githubusercontent.com/iOiurson/data/master/data/tweets.json')
   .then(function (resp) {
     return resp.json();
@@ -5,19 +7,24 @@ fetch('https://raw.githubusercontent.com/iOiurson/data/master/data/tweets.json')
   .then(function (tweets) {
     console.log('Le tableau de tweet', tweets);
 
-    // ### Projet Touitter ###
-    // Attention: toucher au DOM coûte cher, utiliser le moins possible les APIs du DOM
+    let ol = createOl(tweets);
+    let isFr = false;
 
-    // [1] créer une fonction createLi(), qui pour un tweet en entrée, crée et retourne un <li> contenant le texte du tweet
+    const button = document.createElement('button');
+    button.textContent = 'Filtrer';
+    button.addEventListener('click', () => {
+      const tweetsToDisplay = isFr
+        ? tweets
+        : tweets.filter(tweet => tweet.lang === 'fr');
 
-    // [2] créer et ajouter un <ol> à la page, puis y ajouter les <li> de tweets en utilisant [1]
+      const newOl = createOl(tweetsToDisplay);
+      isFr = !isFr;
+      ol.replaceWith(newOl);
+      ol = newOl;
+    });
 
-    // [3] créer un <button> de filtre pour que quand on clique dessus, ne garde que les tweets en français à l'écran
-
-    // [4] modifier le bouton de filtre pour pouvoir réafficher tous les tweets quand on reclique dessus
-
-    /* [5] créer une fonction createOl(), qui pour un tableau tweets en entrée, crée et retourne un <ol> rempli de <li>
-    et l'utiliser à [2], [3], [4] */
+    document.body.append(button);
+    document.body.append(ol);
 
     /* [6] Créer un bouton qui, quand on clique dessus:
             - active le tracking de la souris: la console affiche position de la souris (event.clientX, event.clientY) quand la souris bouge
