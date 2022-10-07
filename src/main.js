@@ -1,46 +1,40 @@
-import createOl from './createOl.js';
+import getJson from "./getJson.js";
+import { isFrenchTweet } from "./utils.js";
+import createOl from "./createOl.js";
+import createFilterButton from "./createFilterButton.js";
+import createTrackingButton from "./createTrackingButton.js";
 
-fetch('https://raw.githubusercontent.com/iOiurson/data/master/data/tweets.json')
-  .then(function (resp) {
-    return resp.json();
-  })
+const urls = [
+  "https://raw.githubusercontent.com/iOiurson/data/master/data/tweets.json",
+  "https://raw.githubusercontent.com/iOiurson/data/master/data/tweets2.json",
+];
+const promises = urls.map(getJson);
+
+Promise.all(promises)
   .then(function (tweets) {
-    console.log('Le tableau de tweet', tweets);
+    tweets = tweets.flat();
+    console.log("Le tableau de tweet", tweets);
 
-    let ol = createOl(tweets);
     let isFr = false;
 
-    const button = document.createElement('button');
-    button.textContent = 'Filtrer';
-    button.addEventListener('click', () => {
-      const tweetsToDisplay = isFr
-        ? tweets
-        : tweets.filter(tweet => tweet.lang === 'fr');
+    let ol = createOl(tweets);
+    const filterButton = createFilterButton({
+      label: "Filtre",
+      handleClick: () => {
+        const tweetsToDisplay = isFr ? tweets : tweets.filter(isFrenchTweet);
 
-      const newOl = createOl(tweetsToDisplay);
-      isFr = !isFr;
-      ol.replaceWith(newOl);
-      ol = newOl;
+        const newOl = createOl(tweetsToDisplay);
+        isFr = !isFr;
+        ol.replaceWith(newOl);
+        ol = newOl;
+      },
     });
 
-    document.body.append(button);
+    const trackingButton = createTrackingButton();
+
+    document.body.append(trackingButton);
+    document.body.append(filterButton);
     document.body.append(ol);
-
-    /* [6] Créer un bouton qui, quand on clique dessus:
-            - active le tracking de la souris: la console affiche position de la souris (event.clientX, event.clientY) quand la souris bouge
-            - désactive le tracking quand on reclique dessus
-        */
-
-    /* [7] créer une fonction qui crée et renvoie le bouton de filtre.
-          Cette fonction doit contenir toute la logique liée au filtre.
-          Utiliser cette fonction pour remplacer le code de création du bouton de filtre.
-        */
-
-    // [8] Utiliser la fonction getJson() pour charger les tweets à la place des lignes 6 à 11
-
-    /* [9] Utiliser Promise.all() pour charger également les tweets de cette url :
-          'https://raw.githubusercontent.com/iOiurson/formation/correction/data/tweets2.json'
-        */
 
     // ### BONUS : LOCALSTORAGE ###
 
